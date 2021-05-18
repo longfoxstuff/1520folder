@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<title>Home for 1520</title>
+
+<link rel="shortcut icon" href="favicon.ico" />
+  
+</head>
+
+<body>
+
+<div class="container">
+
+<ul class="nav nav-pills">
+
+  <li class="nav-item">
+    <a class="nav-link active" href="./home.html">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./syllabus.html">Syllabus</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./schedule.html">Schedule</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./homework.html">Homework</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="./tests.html">Tests</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./project.html">Project</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./links.html">Links</a>
+  </li>
+</ul>
+<br />
+<h1>Welcome to CIST 1520 Scripting Technologies</h1>
+<br />
+<p>HTML - Structural &nbsp; CSS - Presentation &nbsp; 	Javascript - Behavioral</p>
+
+<script>
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+
+</script>
+<br /><br />
+<p>Instructor: Paul Long, M Ed., A+, Net+</p>
+	<p>Phone Number: 706-754-7745</p>
+	<p>Office: Parker Nellis, Room 116</p>
+	<p>E-mail: <a href="mailto:plong@northgatech.edu">plong@northgatech.edu</a></p>
+	<p>Campus map showing the Parker Nellis Building</p>
+	<p><img src="images/Parker_Nellis_Map.png" width="880" height="668" alt="campus map"></p>
+<br />
+<footer>
+   <p>&copy; 2019 PLong Heavy Industries</p>
+</footer>
+</div>
+</body>
+</html>
