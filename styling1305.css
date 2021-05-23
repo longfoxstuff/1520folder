@@ -1,0 +1,107 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width:100%;
+	margin:auto;
+	background-color:#074C8F; /* blue */
+	font-size:6px;	
+}
+
+.content {
+	margin-left:30px;
+	margin-top:20px;
+	margin-right:30px;
+	margin-bottom:20px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	background-color:#ffffff;	
+}
+
+.mainBody {
+	margin-left:40px;
+	margin-bottom:0;
+}
+
+.icon {
+	width:92%;
+	margin:auto;
+	text-align:center;	
+}
+
+.menu {
+	width:92%;
+	margin:auto;
+	text-align:center;
+	font-size:20px;
+	background-color:#E6F6F0;
+}    
+
+.info {
+	width:92%;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.syllabus {
+	width:92%;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.table1, tr, td  {
+	margin-left:30px;
+	border:1px solid black;
+	line-height:2em;
+}
+
+.table, tr, td  {
+	margin:auto;
+	border:1px solid black;
+	line-height:2em;
+}
+
+.syllabus {
+	width:92%;
+	margin-left:50px;
+	margin-right:50px;
+}
+
+.tableRubric, tr, td  {
+	margin:auto;
+	width:60%;
+	border:1px solid black;
+	line-height:2em;
+}
+
+.rubric, tr, td { 
+	margin:auto;
+	width:100%;
+	border:1px solid black;
+	line-height:2em;
+	font-size:14px;
+}
+
+.footer {
+	width:92%;
+	margin:auto;
+	color:#074C8F;
+	text-align:center;
+	font-size:11px;
+	font-style:italic;
+}
+
+hr {
+	width:92%;
+	margin:auto;
+}  
+
+ul, li {
+	margin-left: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+	text-align:center;
+}
+ 
