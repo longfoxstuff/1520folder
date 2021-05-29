@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<title>Old Projects for 1520</title>
+ 
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h1, h2, h3").toggleClass("blue");
+	$("footer").toggleClass("green");
+    $("p").toggleClass("orange");
+    
+  });
+});
+</script>
+<style>
+.blue {
+  color: #0178ff;
+}
+
+.orange {
+  color: #ff8c00;
+}
+
+.green {
+  color: #00a819;
+}
+
+</style>
+ 
+</head>
+
+<body>
+
+<div class="container">
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" href="./home.html">Home</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./syllabus.html">Syllabus</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./schedule.html">Schedule</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./homework.html">Homework</a>
+	</li>
+   <li class="nav-item">
+    <a class="nav-link" href="./tests.html">Tests</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link active" href="./project.html">Project</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./links.html">Links</a>
+	</li>
+</ul>
+<br />
+
+<h1>Projects for CIST 1520</h1>
+<br>		
+<h2>Project 1 - Write code to do something</h2>
+	<p>Create an HTML file with included javascript to let the user enter a series of class test scores.                 Then, when the user enters any negative number instead of a valid score, the application ends the series and                displays the average test score. </p>
+	<p>Use some kind of looping and use the built-in prompt() function. The value returned from prompt()                  is a string, so use parseInt() to convert it to a numeric. Test for valid scores. Valid scores range                  from 0 to 100.</p>
+	<p>The formula for average score is: <em>total_of_all_scores / number_of_scores</em>;                  The javascript in your loop should accumulate the values for these two variables. Display your                  calculated average on the screen using innerHTML.</p>
+<p><a href="files/CIST1520Project1Rubric.docx">Link to the rubric for this project</a></p>
+	
+<h3>Project 2 </h3>
+	<p>Follow the instructions in Project2/<strong>project2_instructions.txt</strong></p>
+	<p><a href="files/CIST1520Project2Rubric.docx">Link to the rubric for this project</a></p>
+<button>Toggle me</button>
+<br>
+<br>
+<footer>
+   &copy; 2019 PLong Heavy Industries
+</footer>
+</div>	
+</body>
+</html>
