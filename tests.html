@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<title>Tests for 1520</title>
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#p1").css("color", "green")
+            .slideUp(2000)
+            .slideDown(2000);
+    });
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<ul class="nav nav-pills">
+  <li class="nav-item">
+    <a class="nav-link" href="./home.html">Home</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./syllabus.html">Syllabus</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./schedule.html">Schedule</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./homework.html">Homework</a>
+	</li>
+   <li class="nav-item">
+    <a class="nav-link active" href="./tests.html">Tests</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./project.html">Project</a>
+	</li>
+  <li class="nav-item">
+    <a class="nav-link" href="./links.html">Links</a>
+	</li>
+</ul>
+<br />
+
+	
+<h1>Test Page for CIST 1520</h1>
+
+<div id="flip">Click to slide the panel down or up</div>
+<div id="panel">Welcome to this page!</div>
+<br />
+
+<h2>Magic using jquery!</h2>
+<p>If you click the hide button, I will disappear.</p>
+<p>If you click the show button, I will reappear.</p>
+
+<br />
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<br />
+<br />
+<p id="p1">jQuery is magic!!</p>
+
+<button>Don't click me</button>
+<br />
+<br />
+<footer>
+   <p>&copy; 2019 PLong Heavy Industries</p>
+</footer>
+</div>
+</body>
+</html>
+
