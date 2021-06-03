@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Array Project</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For responsive design -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<!--         Assignment:
+  1) Study the assignment statement for array students. This is an array of objects. How can you tell?
+  2) Add student Ralph to the array. Ralph doesn't smoke and he drives a black car.
+  3) Complete the coding for function show_carColor()
+  4) What is the index number of the fifth student in the array?
+  5) Convert the code in function show_smokers()  to use the operator  +=
+-->
+<body>
+
+<div id="wrapper">
+
+<header>
+<h1>Array Project</h1>
+</header>
+
+<h1>Arrays of objects</h1>
+
+<nav></nav>
+
+<main>
+
+<p id="smokers">Click the button to show the smokers among the students. 
+<button type="button" onclick="show_smokers( 'smokers' );">CREATE REPORT</button>
+</p>
+
+<p id="result2">Click the button to show who has a white car. 
+<button type="button" onclick="show_carColor( 'result2', 'white' );">CREATE REPORT</button>
+</p>
+ 
+<script>
+var students = [
+   { name:"Ann", smoker:false, carColor:"silver"  },
+   { name:"Bill", smoker:true, carColor:"red"  },
+   { name:"Jason", smoker:false, carColor:"white"  },
+   { name:"Bob", smoker:true, carColor:"black"  },
+   { name:"Al", smoker:false, carColor:"black"  },
+   { name:"Angie", smoker:true, carColor:"silver"  },
+   { name:"Joyce", smoker:true, carColor:"white"  },
+   { name:"Steven", smoker:false, carColor:"red"  }   
+   ];
+
+function show_smokers(id)
+   {
+   var i,rpt = '<h2>Smokers among the Students</h2>';
+
+   for (i = 0; i < students.length; ++i)
+      {
+      if ( students[ i ].smoker )
+         rpt = rpt + students[ i ].name + '<br>';
+      }
+
+   document.getElementById(id).innerHTML = rpt;
+   }
+
+function show_carColor(id,carColor)
+   {
+   var i,rpt = '<h2>Students who have a ' + carColor + ' car.</h2>';
+
+         /*  fill in the correct javascript code here */
+
+   document.getElementById(id).innerHTML = rpt;
+   }
+</script>
+
+</main>
+
+<footer>
+<p>&copy; 2021 LongFox Heavy Industries</p>
+</footer>
+
+</div>
+</body>
+</html> 
