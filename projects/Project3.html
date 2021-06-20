@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+ <title>Project 3</title>
+  
+<style>
+div { width:480px;
+   margin-top:50px;
+   padding:15px;
+	border:2px solid #000;
+	border-radius:10px;	-moz-border-radius:10px;
+   box-shadow: 10px 10px 5px #000000;
+   }
+h1 { text-align:center; color:blue; }
+label { float: left;
+   width: 11em;
+   text-align: right;
+   }
+input {
+   margin-left: 1em;
+   margin-bottom: .5em;
+   }
+</style>
+
+</head>
+<!--         Assignment:
+  You have seen how to invoke a function and assign whatever value it returns to a variable.
+  This exercise demonstrates that you don't have to assign a function's return value to a variable
+  in order to use it - you can use the function invocation expression itself, since it resolves to the value.
+  The following 2 code snippets produce the exact same result:
+      a)   var myVar = Math.max( 0, 150, 30, 20 ); alert( "The biggest is " + myVar );
+      b)   alert( "The biggest is " +  Math.max( 0, 150, 30, 20 ) );
+
+   This exercise also demonstrates that a function doesn't always require a name. It can be
+   anonymous if you never need to call it by name, like when it is invoked when an event occurs.
+   The window object is the display screen. One of its methods is the onload event handler.
+     window.onload = function() {  some code }
+   assigns a function that will execute when the page loads (into the window object). This function
+   has no name - it doesn't need one, because you never call it by name.
+   
+   domObj is a variable. Its value is not a number or a string. Its value is a function definition.
+   You can now invoke the function with domObj(). It has become the function's name.
+   
+   Before jQuery was available all DOM search and manipulation was done how you see it in this exercise.
+   You fetched a DOM object with functions like getElementById() and you assigned, for example, new text to
+   the value property of the fetched DOM object. At times this could look mysterious like the assignment statement:
+           domObj( "mpgLabel" ).childNodes[0].nodeValue = 'Miles per gallon:';
+   
+  1) Add the ability to display km per gallon. Complete the missing code in function calculateKMG()
+  The formula for converting miles to km is  km = miles * 1.60934.
+-->
+<body>
+
+<div class="container">
+
+   <h2>More about Objects and Functions</h2>
+   <div>
+      <h1>Calculate Miles per Gallon</h1>
+      <label for="miles">Miles driven:</label>
+      <input type="text" id="miles"><br>
+      <label for="gallons">Gallons of gas used:</label>
+      <input type="text" id="gallons"><br>
+      <label for="mpg" id="mpgLabel">Miles per gallon:</label>
+      <input type="text" id="mpg" disabled><br>
+      <input type="button" id="calculateMPG" value="Calculate MPG">
+      <input type="button" id="calculateKMG" value="Calculate km per gallon">
+   </div>
+
+<script>
+var domObj = function( id )
+   {  // searches the DOM for an element with the specified id. Returns a DOM object.
+   return document.getElementById( id );
+   }
+
+function calculateMpg()
+   {  // parses values from the input form. If valid then calculates mpg and displays it
+   var miles = parseFloat( domObj( "miles" ).value );
+   var gallons = parseFloat( domObj( "gallons" ).value);
+   if (isNaN( miles ) || isNaN( gallons ) || gallons == 0)
+      {
+      alert( "Both entires must be numeric, gallons not zero." );
+      }
+   else
+      {
+      var mpg = miles / gallons;
+      domObj( "mpgLabel" ).childNodes[0].nodeValue = 'Miles per gallon:';
+      domObj( "mpg" ).value = mpg.toFixed( 1 );
+      }
+   }
+
+function calculateKMG()
+   {  // parses values from the input form. If valid then calculates km per gallon and displays it
+
+      /* place your code here */
+   
+   }
+
+window.onload = function()
+   {        // anonymous function to execute after page has loaded
+   domObj( "calculateMPG" ).onclick = calculateMpg;
+   domObj( "calculateKMG" ).onclick = calculateKMG;
+   domObj( "miles" ).focus();
+   }
+</script>
+</div>
+</body>
+</html> 
