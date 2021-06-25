@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.demoSpan {  padding:30px; border:#000 solid 2px;  }
+.turnYellow {  background-color:yellow;  }
+.makeDotty {   border:#000 dotted 2px;  }
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+<!--         Assignment:
+   $() is the jQuery function for working with jQuery object properties and methods.
+   $(document).ready(  )  is jQuery's onload event handler. It is executed after the webpage is fully loaded.
+  In this exercise upon page load:
+    - jQuery selects all elements with the "hoverSpan" class
+    - then it invokes the methods to set up two event handlers on each of these selected elements:
+      (1) when the mouse hovers over the element (indicated by the keyword "this" in the jQuery) it adds the "turnYellow" class to the element
+      (2) when the mouse stops hovering the element it removes the "turnYellow" class from the element and the yellow disappears
+    Notice the use of method chaining: the methods mouseover() and mouseout() are applied in turn to the same collection of selected elements.
+    When an event handler method is executed it uses the keyword "this" to reference the element upon which the event occurred, e.g. 
+    the first hoverSpan box.
+
+  1) Using jQuery select all elements with the "clickSpan" class, then setup an event handler to make the border dotted when the element is clicked.
+  2) Then code your event handler to toggle the dotted border on and off with each new click. 
+   Hint: use the jQuery method toggleClass()  or use hasClass() and removeClass()
+-->
+<body>
+<h2>$ keyword 'this' and method chaining</h2>
+<div>
+   <br><br>
+   <span class="demoSpan hoverSpan">first hoverSpan</span>
+   <span class="demoSpan clickSpan">first clickSpan</span>
+   <span class="demoSpan hoverSpan">second hoverSpan</span>
+   <span class="demoSpan clickSpan">second clickSpan</span>
+   <span class="demoSpan hoverSpan clickSpan">combined hoverSpan clickSpan</span>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('.hoverSpan') . mouseover( function(){ $(this).addClass( "turnYellow" ); } ) . mouseout( function(){ $(this).removeClass( "turnYellow" ); } );
+});</script>
+</body>
+</html> 
