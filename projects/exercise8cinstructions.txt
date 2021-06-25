@@ -1,0 +1,14 @@
+Make the following changes to the DOM of this page, exercise8c.html, using only javascript/jQuery which you add to the page. Do not edit the HTML.
+
+1) remove the left and right arrows near the top of the page.
+
+2) wrap an anchor element (<a ></a>) around the ticket purchase image with 
+href="http://snca.tix.com" target="_blank"
+
+3) wrap an anchor element (<a ></a>) around the facebook image with 
+href="https://www.facebook.com/SauteeNacoocheeCenter" target="_blank"
+
+4) find the <div> containing the copyright notice at the bottom of the page and replace its 
+HTML with the text 
+"copyright © yyyy Sautee Nacoochee Community Association"
+Instead of the yyyy display the current year using jQuery. Do not edit the HTML.

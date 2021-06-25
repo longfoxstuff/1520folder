@@ -1,0 +1,16 @@
+1) Run page.html to see the page before any changes.
+
+2) Run page2.html to see a few changes performed solely using javascript/jQuery.
+Notice one arrow at the top of the page has been removed. Notice the copyright 
+notice at the bottom of the page has been changed. Also the facebook icon is now a hyperlink.
+
+3) Copy page2.html to a new file, exercise8a.html
+Without editing any of the existing HTML code add javascript/jQuery to this file to:
+
+   a) Remove the other arrow.
+
+   b) Wrap an anchor element (<a>) around the twitter icon using href="http://twitter.com/SauteeNacoochee"
+
+   c) Wrap an anchor element (<a>) around the pinterest icon using href="https://pinterest.com/sncenter"
+
+   d) Replace the 'yyyy' in the copyright notice with the current year using a method of the Date object.
